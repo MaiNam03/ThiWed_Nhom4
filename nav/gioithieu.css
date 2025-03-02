@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+}
+.container {
+    margin: auto;
+    background: #f4f0dc;
+    padding: 0px;
+}
+
+/*viền wed*/
+body::after, body::before{
+    position: fixed;
+    content: "";
+    top: 0px;
+    bottom: 0px;
+    width: 2%;
+    background-color: #e1b75b;/*viền ngoài*/
+    box-shadow: 0 0 0 10px #001e35;/*viền trong*/
+}
+
+body::after{
+    left: 0px;
+}
+
+body::before{
+    right: 0px;
+}
+
+/*header*/
+header {
+    background:#f4f0dc;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 94%;
+    width: 100%;
+    margin: auto;
+}
+.logo {
+    width: 250px;
+    height: 110px;
+}
+.hotline {
+    color: #001e35;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/*nav*/
+nav {
+    background: #001e35;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #f4f0dc;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav ul li:hover a{
+    background-color: #e1b75b;
+    color: #001e35;
+    border-radius: 10px;
+}
+
+/*main*/
+.container-main{
+    max-width: 91vw;
+    width: 100%;
+    margin: 2vh 4vw 2vh 4vw;
+    background-color: #e1b75b;
+    border-radius: 10px;
+}
+.slogan{
+    width: 88vw;
+    height: 20%;
+    margin-left: 1.5vw;
+    margin-top: 2vh;
+}
+.noidung{
+    margin: 2vh 4vw 2vh 4vw;
+    font-size: 24px;
+}
+.services {
+    display: flex;
+    justify-content: center; 
+    align-items: stretch;
+    gap: 10px;
+    margin: 20px; 
+}
+
+.service {
+    max-width: 20%; 
+    text-align: center; 
+    background: #fefae0; 
+    padding: 50px;
+    border-radius: 15px;
+}
+
+
+.service img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.noidung2 {
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.noidung3 {
+    font-size: 18px;
+    margin-top: 5px;
+}
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+

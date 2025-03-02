@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+}
+.container {
+    margin: auto;
+    background: #f4f0dc;
+    padding: 0px;
+}
+
+/*viền wed*/
+body::after, body::before{
+    position: fixed;
+    content: "";
+    top: 0px;
+    bottom: 0px;
+    width: 2%;
+    background-color: #e1b75b;/*viền ngoài*/
+    box-shadow: 0 0 0 10px #001e35;/*viền trong*/
+}
+
+body::after{
+    left: 0px;
+}
+
+body::before{
+    right: 0px;
+}
+
+/*header*/
+header {
+    background:#f4f0dc;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 94%;
+    width: 100%;
+    margin: auto;
+}
+.logo {
+    width: 250px;
+    height: 110px;
+}
+.hotline {
+    color: #001e35;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/*nav*/
+nav {
+    background: #001e35;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #f4f0dc;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav ul li:hover a{
+    background-color: #e1b75b;
+    color: #001e35;
+    border-radius: 10px;
+}
+
+/*main*/
+.container-main{
+    max-width: 91vw;
+    width: 100%;
+    margin: 2vh 4vw 2vh 4vw;
+    background-color: #e1b75b;
+    border-radius: 10px;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 10vw;
+}
+.form-group label {
+    width: 100px; 
+    text-align: left;
+}
+.form-group input, .form-group select {
+    width: 200px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.submit-btn {
+    margin-left: 20.2vw;
+    margin-bottom: 4vh;
+}
+p, .textmain{
+    margin-left: 2vw;
+    font-size: 24px;
+}
+h1{
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 0px;
+    font-size: 36px;
+}
+.ggmap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    width: 80%;
+    height: 700px;
+    border-radius: 10px;
+}
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
