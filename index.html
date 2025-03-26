@@ -24,9 +24,10 @@
             <ul>
                 <strong>
                     <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="./nav/gioithieu.html">Giới thiệu</a></li>
-                    <li><a href="./nav/dichvu.html">Dịch vụ</a></li>
-                    <li><a href="./nav/lienhe.html">Liên hệ</a></li>
+                    <li><a href="nav/gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="nav/dichvu.html">Dịch vụ</a></li>
+                    <li><a href="nav/sanpham/chonsanpham.html">Sản phẩm </a></li>
+                    <li><a href="nav/lienhe.html">Liên hệ</a></li>
                 </strong>
             </ul>
         </nav>
@@ -34,8 +35,16 @@
 
         <div class="container-main">
             <!-- Slideshow -->
-            <div class="slideshow">
-                <img src="./img/slider.jpg" alt="Slide 1">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="img/slider.jpg" alt="Image 1"></div>
+                    <div class="slide"><img src="img/slider1.jpg" alt="Image 2"></div>
+                    <div class="slide"><img src="img/slider2.jpg" alt="Image 3"></div>
+                </div>
+                <div class="controls">
+                    <button class="btn" id="prev">&lt;</button>
+                    <button class="btn" id="next">&gt;</button>
+                </div>
             </div>
 
 
@@ -68,13 +77,36 @@
             <hr>
             <br>
             <div class="student-name">
-                Chức vụ và tên các thành viên<br>
-                CEO: Huỳnh Đức Thông <br>
-                Designer: Cao Trần Tấn Đạt <br>
                 Bảo vệ: Trần Lương Mai Nam 
             </div>
         </footer>
     </div>
-    
+    <script>
+        const slides = document.querySelector('.slides');
+        const slide = document.querySelectorAll('.slide');
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+
+        let index = 0;
+
+        function updateSlide() {
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function nextSlide() {
+            index = (index + 1) % slide.length;
+            updateSlide();
+        }
+
+        function prevSlide() {
+            index = (index - 1 + slide.length) % slide.length;
+            updateSlide();
+        }
+
+        next.addEventListener('click', nextSlide);
+        prev.addEventListener('click', prevSlide);
+
+        setInterval(nextSlide, 6000); // Tự động chuyển slide sau 3 giây
+    </script>
 </body>
 </html>

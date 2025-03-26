@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F3 BUILDER</title>
+    <link rel="stylesheet" href="../sanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <div class="container">
+        <!-- Header --> 
+        <header>
+            <img src="../../img/logo-removebg-preview.png" alt="Logo" class="logo">
+            <div class="hotline">
+                <strong>Hotline: 0909 123 456</strong>
+            </div>
+        </header>
+
+
+        <!-- Menu -->
+        <nav>
+            <ul>
+                <strong>
+                    <li><a href="../../index.html">Trang chủ</a></li>
+                    <li><a href="../gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="../dichvu.html">Dịch vụ</a></li>
+                    <li><a href="chonsanpham.html">Sản phẩm</a></li>
+                    <li><a href="../lienhe.html">Liên hệ</a></li>
+                </strong>
+            </ul>
+        </nav>
+
+        <div class="container-main">
+            <h2>THIẾT BỊ VÀ PHỤ KIỆN XÂY DỰNG</h2>
+            <div class="products">
+                <div class="product" data-name="Máy trộn bê tông" data-price="5500000">
+                    <img src="../../img/thietbivaphukien/maytronbetong.jpg" alt="Máy trộn bê tông">
+                    <h3>Máy trộn bê tông</h3>
+                    <p>Giá: 5.500.000 VNĐ/cái</p>
+                    <button onclick="addToCart(this)">Mua ngay</button>
+                </div>
+                <div class="product" data-name="Máy cắt gạch" data-price="2800000">
+                    <img src="../../img/thietbivaphukien/maycatgach.jpg" alt="Máy cắt gạch">
+                    <h3>Máy cắt gạch</h3>
+                    <p>Giá: 2.800.000 VNĐ/cái</p>
+                    <button onclick="addToCart(this)">Mua ngay</button>
+                </div>
+                <div class="product" data-name="Máy khoan bê tông" data-price="2590000">
+                    <img src="../../img/thietbivaphukien/maykhoanbetong.jpg" alt="Máy khoan bê tông">
+                    <h3>Máy khoan bê tông</h3>
+                    <p>Giá: 2.590.000 VNĐ/cái</p>
+                    <button onclick="addToCart(this)">Mua ngay</button>
+                </div>
+                <div class="product" data-name="Máy bơm nước" data-price="1250000">
+                    <img src="../../img/thietbivaphukien/maybomnuoc.jpg" alt="Máy bơm nước">
+                    <h3>Máy bơm nước</h3>
+                    <p>Giá: 1.250.000 VNĐ/cái</p>
+                    <button onclick="addToCart(this)">Mua ngay</button>
+                </div>
+                <div class="product" data-name="Bản lề cửa" data-price="70000">
+                    <img src="../../img/thietbivaphukien/banlecua.jpg" alt="Bản lề cửa">
+                    <h3>Bản lề cửa</h3>
+                    <p>Giá: 70.000 VNĐ/cái</p>
+                    <button onclick="addToCart(this)">Mua ngay</button>
+                </div>
+                <div class="product" data-name="Ổ cắm điện âm tường" data-price="150000">
+                    <img src="../../img/thietbivaphukien/ocamdien.jpg" alt="Ổ cắm điện âm tường">
+                    <h3>Ổ cắm điện âm tường</h3>
+                    <p>Giá: 150.000 VNĐ/bộ</p>
+                    <button onclick="addToCart(this)">Mua ngay</button>
+                </div>
+                <div class="product" data-name="Đinh vít và tắc kê" data-price="50000">
+                    <img src="../../img/thietbivaphukien/dinhvit.jpg" alt="Đinh vít và tắc kê">
+                    <h3>Đinh vít và tắc kê</h3>
+                    <p>Giá: 50.000 VNĐ/hộp</p>
+                    <button onclick="addToCart(this)">Mua ngay</button>
+                </div>
+                <div class="product" data-name="Ống nhựa PVC" data-price="90000">
+                    <img src="../../img/thietbivaphukien/ongnhua.jpg" alt="Ống nhựa PVC">
+                    <h3>Ống nhựa PVC</h3>
+                    <p>Giá: 90.000 VNĐ/m</p>
+                    <button onclick="addToCart(this)">Mua ngay</button>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <div class="container-main">
+            <h2>VẬT LIỆU XÂY DỰNG</h2>
+            <div class="products">
+                <div class="product" data-name="Gạch Block" data-price="10000">
+                    <img src="../../img/vatlieuxaydung/gachblock.jpg" alt="Gạch Block">
+                    <h3>Gạch Block</h3>
+                    <p>Giá: 10.000 VNĐ/viên</p>
+                    <button onclick="addToCart(this)">Mua ngay</button>
+                </div>
+                <div class="product" data-name="Gạch Xây Dựng" data-price="5000">
+                    <img src="../../img/vatlieuxaydung/gachxaydung.jpg" alt="Gạch Xây Dựng">
+                    <h3>Gạch Xây Dựng</h3>
+                    <p>Giá: 5.000 VNĐ/viên</p>
+                    <button onclick="addToCart(this)">Mua ngay</button>
+                </div>
+                <div class="product" data-name="Xi Măng" data-price="90000">
+                    <img src="../../img/vatlieuxaydung/ximang.jpg" alt="Xi Măng">
+                    <h3>Xi Măng</h3>
+                    <p>Giá: 90.000 VNĐ/bao</p>
+                    <button onclick="addToCart(this)">Mua ngay</button>
+                </div>
+                <div class="product" data-name="Gỗ Công Nghiệp" data-price="250000">
+                    <img src="../../img/vatlieuxaydung/gocongnghiep.jpg" alt="Gỗ Công Nghiệp">
+                    <h3>Gỗ Công Nghiệp</h3>
+                    <p>Giá: 250.000 VNĐ/tấm</p>
+                    <button onclick="addToCart(this)">Mua ngay</button>
+                </div>
+                <div class="product" data-name="Cát Xây Dựng" data-price="270000">
+                    <img src="../../img/vatlieuxaydung/catxaydung.jpg" alt="Cát Xây Dựng">
+                    <h3>Cát Xây Dựng</h3>
+                    <p>Giá: 270.000 VNĐ/m<sup>3</sup></p>
+                    <button onclick="addToCart(this)">Mua ngay</button>
+                </div>
+                <div class="product" data-name="Đá Xây Dựng" data-price="200000">
+                    <img src="../../img/vatlieuxaydung/daxaydung.jpg" alt="Đá Xây Dựng">
+                    <h3>Đá Xây Dựng</h3>
+                    <p>Giá: 200.000 VNĐ/m<sup>3</sup></p>
+                    <button onclick="addToCart(this)">Mua ngay</button>
+                </div>
+                <div class="product" data-name="Tôn Lợp Mái" data-price="120000">
+                    <img src="../../img/vatlieuxaydung/tonlopmai.jpg" alt="Tôn Lợp Mái">
+                    <h3>Tôn Lợp Mái</h3>
+                    <p>Giá: 120.000 VNĐ/m<sup>2</sup></p>
+                    <button onclick="addToCart(this)">Mua ngay</button>
+                </div>
+                <div class="product" data-name="Sắt Thép Xây Dựng" data-price="18000">
+                    <img src="../../img/vatlieuxaydung/thepxaydung.jpg" alt="Sắt Thép Xây Dựng">
+                    <h3>Sắt Thép Xây Dựng</h3>
+                    <p>Giá: 18.000 VNĐ/Kg</p>
+                    <button onclick="addToCart(this)">Mua ngay</button>
+                </div>
+            </div>
+            <div class="cart">
+                <h2>Giỏ hàng</h2>
+                <ul id="cart-items"></ul>
+                <p>Tổng tiền: <span id="total-price">0</span> VNĐ</p>
+                <button onclick="clearCart()">Xóa giỏ hàng</button>
+                <button onclick="checkout()">Thanh toán</button>
+            </div>
+            <br>
+        </div>
+
+
+        <!-- Footer -->
+        <footer>
+            <br>
+            <div class="copyright">
+                &copy; 2003 F3 BUILDER All Rights Reserved
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="student-name">
+                Bảo vệ Wed: Trần Lương Mai Nam 
+                <p>
+                    <a style="font-size: 50px;;"  href="https://www.facebook.com/tran.luong.mai.nam/?locale=vi_VN"><i class="fa-brands fa-facebook"></i>  </a>
+                    <a style="margin-left: 20px;font-size: 50px;" href="tel:0909123456"><i class="fa-solid fa-phone"></i></a>
+                    <a style="margin:39px;font-size: 50px;" href="tel:tlmainam03@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </p>
+                
+            </div>
+        </footer>
+    </div>
+    <script>
+        let cart = [];
+
+        function addToCart(button) {
+            let product = button.parentElement;
+            let name = product.getAttribute("data-name");
+            let price = parseInt(product.getAttribute("data-price"));
+            
+            let item = cart.find(item => item.name === name);
+            if (item) {
+                item.quantity += 1;
+            } else {
+                cart.push({ name, price, quantity: 1 });
+            }
+            updateCart();
+        }
+
+        function updateCart() {
+            let cartList = document.getElementById("cart-items");
+            let totalPrice = document.getElementById("total-price");
+            cartList.innerHTML = "";
+            let total = 0;
+
+            cart.forEach(item => {
+                total += item.price * item.quantity;
+                let li = document.createElement("li");
+                li.textContent = `${item.name} - ${item.quantity} x ${item.price.toLocaleString()} VNĐ`;
+                cartList.appendChild(li);
+            });
+
+            totalPrice.textContent = total.toLocaleString();
+        }
+
+        function clearCart() {
+            cart = [];
+            updateCart();
+        }
+
+        function generateOrderId() {
+            let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            let orderId = "";
+            for (let i = 0; i < 8; i++) {
+                orderId += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return orderId;
+        }
+
+        function checkout() {
+            if (cart.length === 0) {
+                alert("Giỏ hàng của bạn đang trống!");
+                return;
+            }
+            
+            let orderId = generateOrderId();
+            let orderDetails = cart.map(item => `${item.name} - ${item.quantity} x ${item.price.toLocaleString()} VNĐ`).join("\n");
+            alert(`📦 Mã đơn hàng: ${orderId}\n\nĐơn hàng của bạn:\n${orderDetails}\n\n💰 Tổng tiền: ${document.getElementById("total-price").textContent} VNĐ\n\nCảm ơn bạn đã mua hàng!`);
+            clearCart();
+        }
+    </script>
+</body>
+</html>
